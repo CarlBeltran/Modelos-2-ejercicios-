@@ -1,0 +1,12 @@
+def mcd(a, b):
+    if b == 0:
+        return a
+    return mcd(b, a % b)
+ 
+try:
+    num1 = int(input("Introduce el primer numero: "))
+    num2 = int(input("Introduce el segundo numero: "))
+ 
+    print "El m�ximo com�n divisor de ", num1," y ", num2," es ", mcd(num1, num2)
+except:
+    print "Se necesitan valores numericos"
