@@ -1,0 +1,16 @@
+def factorial(x,n):
+    
+	if(n>0):
+		x=factorial(x,n-1)
+		x=x*n
+	else:
+		x=1
+	return x
+ 
+try:
+	num = int(input("inserta un numero natural "))
+	
+	calculo=factorial(1,num)
+	print "El factorial de", num, " es", calculo
+except:
+	print "El numero debe ser positivo"
