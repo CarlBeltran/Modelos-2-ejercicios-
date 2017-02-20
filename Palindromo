@@ -1,0 +1,10 @@
+def palindromo(s):
+    return (len(s)<2)or(s[0]!=s[-1])or(palindromo(s[1:-1]))
+
+try:
+    palabra = raw_input("ingrese una palabra")
+    
+    print "La palabra ",palabra," es un palindromo:"
+    print palindromo(palabra)
+except:
+    print "Algo salio mal"
