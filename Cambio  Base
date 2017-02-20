@@ -1,0 +1,25 @@
+# Modelos-2-ejercicios-def base10a2(n):
+    if n / 2 == 0:
+        return n
+    else:
+        return (n % 2) + 10 * base10a2(n / 2)
+
+def binarioDecimal(n):
+    if n / 10 == 0:
+        return n
+    else:
+        return (n % 10) + 2 * binarioDecimal(n / 10)
+try:
+    b= int(input("digite a que base desea cambiar (2 o 10)"))
+    e = int(input("digite el numero que desea cambiar de base"))
+    if b == 2:
+       calculo = base10a2(e)
+       print "Al pasar de base 10 a base 2 el numero",e, "nos da", calculo 
+    elif b == 10:
+        calculo = binarioDecimal(e)
+        print "Al pasar de base 2 a base 10 el numero",e, "nos da", calculo
+    else:
+        print "se requiere un valor valido"
+except:
+	print "Se requiere un valor numerico"
+
