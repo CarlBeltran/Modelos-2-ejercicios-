@@ -1,0 +1,14 @@
+def Division(n,m):
+   if( n < m):
+       return 0
+   else:
+        return 1+ Division(n-m,m);
+
+try:
+    b= float(input("digite el dividendo"))
+    e= float (input("digite el divisor"))
+    calculo=  Division(b,e)
+    print "el resultado de", b ,"/", e , "es", calculo
+except:
+	print "Se requiere un valor numerico"
+
