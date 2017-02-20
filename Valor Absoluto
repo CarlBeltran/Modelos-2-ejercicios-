@@ -1,0 +1,14 @@
+def ValorAbs (x):
+    if x>= 0:
+       return x
+    else:
+       return ValorAbs(x * -1)
+
+try:
+	num = int(input("inserta un numero"))
+	
+	calculo=ValorAbs(num)
+	print "El Valor Absoluto de", num, " es", calculo
+except:
+	print "Se requiere un valor numerico"
+
