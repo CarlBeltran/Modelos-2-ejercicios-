@@ -1,0 +1,15 @@
+def potencia(n,m):
+    if m==1:
+      return n
+    elif m==0:
+      return 1
+    else:
+        return n*potencia(n,m-1)
+try:
+    b= int(input("�Cual es el numero base?"))
+    e= int (input("�Cual es el exponente?"))
+    calculo= potencia(b,e)
+    print "el resultado de", b ,"a la", e , "es", calculo
+except:
+	print "Se requiere un valor numerico"
+
